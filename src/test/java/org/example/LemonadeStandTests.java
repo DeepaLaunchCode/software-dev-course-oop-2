@@ -56,12 +56,12 @@ public class LemonadeStandTests {
     @Test
     public void testSellLemonadeCustom() {
         LemonadeStand lemonadeStand = new LemonadeStand();
-        boolean result = lemonadeStand.sellLemonade(5, 3, 4);
+        boolean result = lemonadeStand.sellLemonade(4, 2, 3);
         assertTrue(result);
-        assertEquals(LemonadeStand.defaultStartingLemons - 5, lemonadeStand.getLemons());
-        assertEquals(LemonadeStand.defaultStartingSugar - 3, lemonadeStand.getSugar());
-        assertEquals(LemonadeStand.defaultStartingIce - 4, lemonadeStand.getIce());
-        assertEquals((5 * LemonadeStand.pricePerLemon) + (3 * LemonadeStand.pricePerSugar) + (4 * LemonadeStand.pricePerIce), lemonadeStand.getMoney(), 0.01);
+        assertEquals(LemonadeStand.defaultStartingLemons - 4, lemonadeStand.getLemons());
+        assertEquals(LemonadeStand.defaultStartingSugar - 2, lemonadeStand.getSugar());
+        assertEquals(LemonadeStand.defaultStartingIce - 3, lemonadeStand.getIce());
+        assertEquals((4 * LemonadeStand.pricePerLemon) + (2 * LemonadeStand.pricePerSugar) + (3 * LemonadeStand.pricePerIce), lemonadeStand.getMoney(), 0.01);
     }
 
     @Test
